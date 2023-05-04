@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(Galaxy.png);
+        background-size: 1920px 1080px;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        }
+
+        nav {
+        background-image: url(Galaxy.png);
+        background-color: black;
+        padding: 10px;
+        overflow: hidden;
+        height: 5%;
+        }
+        h1 {
+            float: left;
+            text-align: center;
+            font-weight: bolder;
+            font-size: xx-large;
+            text-transform: uppercase;
+            color:antiquewhite;
+            margin-left: 5%;
+            margin-top: 2.5%;
+            font-family: fantasy;
+            letter-spacing: .5cm;
+        }
+
+        nav a {
+        float: right;
+        color: #ddd;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        nav a.active, a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-left: 1%;
+            margin-top: 10%;
+        }
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: black;
+            box-shadow: 0 10px 20px black;
+            transform: translateY(-10px);
+        }
+
+        .button h3 {
+            margin-top: 30px;
+            font-size: 26px;
+            font-weight: bold;
+            color: black;
+            position: center;
+        }
+
+        .button:hover h3 {
+            color: #ddd;
+        }
+
+        .button:hover {
+            color: #ddd;
+            background-image: url(Galaxy.png);
+        }
+
+        footer {
+        background-image: url(Galaxy.png);
+        background-color: black;
+        color: #ddd;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-weight: bolder;
+        }
+
+        .container {
+        width: 80%;
+        margin: auto;
+        }
+
+  
+    </style>
+     <script src="https://kit.fontawesome.com/1447b58937.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <h1>BEYOND THE BLUE</h1>
+    <nav>   
+    <div class="container">
+      <a href="Contact us.html">Contact us</a>
+      <a href="About us.html">About us</a>
+      <a href="Gallary.html">Gallery</a>
+      <a class="active" href="Topics.html">Topics</a>
+      <a href="Home Page.html">Home</a>
+    </div>
+    </nav>
+
+    <div class=" button-container">
+        <div class="button" onclick="window.location.href='Human in Space.html'">
+            <img src="Human in Space.jpg" width="400px" height="300px">
+            <h3>Human in Space</h3>
+        </div>
+
+        <div class="button" onclick="window.location.href='Moon to Mars.html'">
+            <img src="Moon to Mars.jpg" width="400px" height="300px">
+            <h3>Moon to Mars</h3>
+        </div>
+
+        <div class="button" onclick="window.location.href='Earth.html'">
+            <img src="Earth topic.jpg" width="400px" height="300px">
+            <h3>Earth</h3>
+        </div>
+    </div> 
+
+      <footer>
+        <div class="container">
+          <p>&copy; 2023 | Beyond the Blue | All Rights Reserved</p>
+        </div>
+      </footer>
+    </body>
+  </html>
+  
